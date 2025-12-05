@@ -1,17 +1,14 @@
-//
-//  OverthinkingApp.swift
-//  Overthinking
-//
-//  Created by Shantanu Mishra  on 03/12/25.
-//
-
+// ThoughtGardenApp.swift
 import SwiftUI
 
 @main
-struct OverthinkingApp: App {
+struct ThoughtGardenApp: App {
+    var gardenVM = GardenViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(gardenVM)
         }
     }
 }
+
