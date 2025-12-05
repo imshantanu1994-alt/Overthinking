@@ -12,7 +12,9 @@ import MapKit
 
 @Observable
 class GardenViewModel {
-    var thoughts: [Thought] = []
+    var thoughts: [Thought] = [
+        Thought(text: "Hello", state: ThoughtState.anxious)
+    ]
     var gardenMood: String = "Sunny"
     var therapists: [Therapist] = []
     var overthinkTaps: Int = 0
